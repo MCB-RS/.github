@@ -35,7 +35,7 @@ Rather than bundling networking, packet serialization, static game registries, a
 | [**`MCBRS-NetherNet`**](https://github.com/MCB-RS/MCBRS-NetherNet) | `mcbrs-nethernet` | WebRTC transport, HTTP signaling (`/v1/join`), JOSE/ECDSA identity assertions, SCTP framing | ✅ **Production Ready** | ![100%](https://progress-bar.xyz/100/?scale=100&title=Done&width=120&color=2ea44f) |
 | [**`MCBRS-Protocol`**](https://github.com/MCB-RS/MCBRS-Protocol) | `mcbrs-protocol` | Automated codegen (`proto-codegen`), VarInt/NBT/primitives codec, ~300 packets & ~700 types | ✅ **Production Ready** | ![100%](https://progress-bar.xyz/100/?scale=100&title=Done&width=120&color=2ea44f) |
 | [**`MCBRS-id`**](https://github.com/MCB-RS/MCBRS-id) | `mcbrs-id` | Automated codegen for blocks, items, entities, block states, and FNV-1a 32-bit runtime hashes | 🚧 **Next Up** | ![0%](https://progress-bar.xyz/0/?scale=100&title=Planned&width=120&color=6e7681) |
-| [**`MCB-RS`**]((https://github.com/MCB-RS/MCB-RS)) | `mcb-rs` | Dedicated server runtime (session state, Snappy/Deflate, AES-256-CFB8, worlds, ticking & plugin API) | 🗓️ **Planned** | ![0%](https://progress-bar.xyz/0/?scale=100&title=Planned&width=120&color=6e7681) |
+| [**`MCB-RS`**](https://github.com/MCB-RS/MCB-RS) | `mcb-rs` | Dedicated server runtime (session state, Snappy/Deflate, AES-256-CFB8, worlds, ticking & plugin API) | 🗓️ **Planned** | ![0%](https://progress-bar.xyz/0/?scale=100&title=Planned&width=120&color=6e7681) |
 
 ---
 
