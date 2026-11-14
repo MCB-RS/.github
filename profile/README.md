@@ -22,7 +22,7 @@ Rather than bundling networking, packet serialization, static game registries, a
 1. **Transport (`MCBRS-NetherNet`)** — Pure WebRTC transport, HTTP signaling, identity assertions, and SCTP channel framing.
 2. **Serialization (`MCBRS-Protocol`)** — Automated code generation and wire-level binary codecs for every Bedrock packet, type, and enum.
 3. **Registries (`MCBRS-id`)** — Automated extraction of canonical block states, item IDs, entity metadata, and FNV-1a network hashes.
-4. **Core Server (`MCBRS`)** — The final async server runtime orchestrating compression, encryption, worlds, entities, and plugins.
+4. **Core Server (`MCB-RS`)** — The final async server runtime orchestrating compression, encryption, worlds, entities, and plugins.
 
 ---
 
@@ -35,7 +35,7 @@ Rather than bundling networking, packet serialization, static game registries, a
 | [**`MCBRS-NetherNet`**](https://github.com/MCB-RS/MCBRS-NetherNet) | `mcbrs-nethernet` | WebRTC transport, HTTP signaling (`/v1/join`), JOSE/ECDSA identity assertions, SCTP framing | ✅ **Production Ready** | ![100%](https://progress-bar.xyz/100/?scale=100&title=Done&width=120&color=2ea44f) |
 | [**`MCBRS-Protocol`**](https://github.com/MCB-RS/MCBRS-Protocol) | `mcbrs-protocol` | Automated codegen (`proto-codegen`), VarInt/NBT/primitives codec, ~300 packets & ~700 types | ✅ **Production Ready** | ![100%](https://progress-bar.xyz/100/?scale=100&title=Done&width=120&color=2ea44f) |
 | [**`MCBRS-id`**](https://github.com/MCB-RS/MCBRS-id) | `mcbrs-id` | Automated codegen for blocks, items, entities, block states, and FNV-1a 32-bit runtime hashes | 🚧 **Next Up** | ![0%](https://progress-bar.xyz/0/?scale=100&title=Planned&width=120&color=6e7681) |
-| [**`MCB-RS`**]((https://github.com/MCB-RS/MCB-RS)) | `mcbrs` | Dedicated server runtime (session state, Snappy/Deflate, AES-256-CFB8, worlds, ticking & plugin API) | 🗓️ **Planned** | ![0%](https://progress-bar.xyz/0/?scale=100&title=Planned&width=120&color=6e7681) |
+| [**`MCB-RS`**]((https://github.com/MCB-RS/MCB-RS)) | `mcb-rs` | Dedicated server runtime (session state, Snappy/Deflate, AES-256-CFB8, worlds, ticking & plugin API) | 🗓️ **Planned** | ![0%](https://progress-bar.xyz/0/?scale=100&title=Planned&width=120&color=6e7681) |
 
 ---
 
@@ -61,7 +61,7 @@ Each crate in the **MCB-RS** organization has a strict boundary and zero circula
                                             │ Raw Reassembled Payloads (`Bytes`)
                                             ▼
 ┌───────────────────────────────────────────────────────────────────────────────────────┐
-│ 4. MCBRS Server Runtime (0% - Planned)                                                │
+│ 4. MCB-RS Server Runtime (0% - Planned)                                               │
 │    • Session Lifecycle, Batch Compression (Snappy / Deflate) & AES-256 Encryption     │
 │    • Pre-Compressed Broadcasts, World Management, Entity Ticking & Plugin Hooks       │
 └───────────────────┬───────────────────────────────────────────────┬───────────────────┘
